@@ -1,4 +1,4 @@
-// app.spec.js 1
+// app.spec.js 3
 /* globals describe, it, expect, _, util, root */
 
 var root = this;
@@ -18,9 +18,9 @@ describe ('app', function(){
     expect(util.kindOf(app)).toBe('object');
   });
 
-  // it ('', function () {
-  //   expect(util.kindOf()).toBe('object');
-  // });
+  it ('patsy', function () {
+    expect(util.kindOf.ppoop.wee).toBe('object');
+  });
 
   // it ('is an init function', function () {
   //   expect(util.kindOf().toBe(true);
