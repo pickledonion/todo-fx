@@ -7,7 +7,7 @@
     "components"
   ],
   "dependencies": {
-    "nashorn-repl": "*",
+    "nashorn-repl":  "git@github.com:pickledonion/nashorn-repl.git",
     "underscore": "*",
     "underscore-contrib": "git://github.com/documentcloud/underscore-contrib#2c3bfc952217b4825f44c6cd293f6eac9030b8e4",
     "jasmine-nashorn": "git@github.com:pickledonion/jasmine-nashorn.git"

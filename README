@@ -4,9 +4,9 @@ repl
 live reloading of js fxml and css
 
 get the repo :
-git@github.com:pickledonion/bower-test.git
+git@github.com:pickledonion/todo-fx.git
 
-cd bower-test
+cd todo-fx
 
 first install components with:
 bower install
