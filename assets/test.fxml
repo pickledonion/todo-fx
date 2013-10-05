@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+
+  <HBox userData="repeat:todo in todos" spacing="10" >
+    <CheckBox  styleClass="check"/>
+    <Label text="{{todoText}}"/>
+  </HBox>
+  <HBox userData="repeat:todo in todos" spacing="10" >
+    <CheckBox  styleClass="check"/>
+    <Label text="{{todoText}}"/>
+  </HBox>
+  <HBox userData="repeat:todo in todos" spacing="10" >
+    <CheckBox  styleClass="check"/>
+    <Label text="{{todoText}}"/>
+  </HBox>

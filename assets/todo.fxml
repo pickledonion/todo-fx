@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox  xmlns:fx="http://javafx.com/fxml" >
+  <Label id="titles" text="todo" />
+  <HBox id="h-span" >
+    <TextField id="input" />
+    <Button id="addButton" text="add" />
+  </HBox>
+  <ListView id="todoList" />
+  <HBox id="h-span" >
+    <Button id="archive" text="archive"/>
+    <Label id="remaining" text="remaining"/>
+  </HBox>
+</VBox>
