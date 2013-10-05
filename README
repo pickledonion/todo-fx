@@ -1,0 +1,15 @@
+javafx todo app
+made with bower components
+repl
+live reloading of js fxml and css
+
+get the repo :
+git@github.com:pickledonion/bower-test.git
+
+cd bower-test
+
+first install components with:
+bower install
+
+then run with:
+bin/test.js
