@@ -19,7 +19,7 @@ describe ('app', function(){
   });
 
   it ('patsy', function () {
-    expect(util.kindOf.ppoop.wee).toBe('object');
+    // expect(util.kindOf.ppoop.wee).toBe('object');
   });
 
   // it ('is an init function', function () {
