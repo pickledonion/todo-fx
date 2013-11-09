@@ -82,40 +82,34 @@
     fxml.get(name).items = fxArray;
   };
 
+  root.appState = root.appState || {};
 
-  root.init = function () {
-    root.loading = load('bower_components/nashorn-repl/lib/loading.js');
-    var todofxml = 'assets/todo.fxml';
-    var todocss = 'assets/todo.css';
-    var appList = [
-      {path:$SCRIPTS[0], load:false},
-      { path:todofxml, fxml:todofxml, css:todocss, cb:'loadAssets', load:true },
-      { path:todocss, fxml:todofxml, css:todocss, cb:'loadAssets', load:false },
-    ];
-    root.loadList = loading.getDefaultLoadList().concat(appList);
-    root.loadAssets = function (obj) {
-      fxml.setScene(obj.fxml, obj.css);
-      app.init(root.appState);
-    };
-    loading.init(root.loadList);
-
-    root.replState = {later:true, filter:root.pretty.format};
-
-    root.timer && root.timer.stop();
-    root.timer = new javafx.animation.AnimationTimer(function () {
-      // app.update(root.appState);
-      watch.update(root.watchState);
-      repl.update(root.replState);
-    });
-    root.timer.start();
-
-    root.appState = root.appState || {};
-
-    // $EXEC('bin/switch');
+  root.loading = load('bower_components/nashorn-repl/lib/loading.js');
+  var todofxml = 'assets/todo.fxml';
+  var todocss = 'assets/todo.css';
+  var appList = [
+    {path:$SCRIPTS[0], load:false},
+    { path:todofxml, fxml:todofxml, css:todocss, cb:'loadAssets', load:true },
+    { path:todocss, fxml:todofxml, css:todocss, cb:'loadAssets', load:false },
+  ];
+  root.loadList = loading.getDefaultLoadList().concat(appList);
+  root.loadAssets = function (obj) {
+    fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
+  loading.init(root.loadList);
 
-  root.init();
+  root.replState = {later:true, filter:root.pretty.format};
 
+  root.timer && root.timer.stop();
+  root.timer = new javafx.animation.AnimationTimer(function () {
+    // app.update(root.appState);
+    watch.update(root.watchState);
+    repl.update(root.replState);
+  });
+  root.timer.start();
+
+  // $EXEC('bin/switch');
+  app.init(root.appState);
 
 }).call(this);
