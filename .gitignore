@@ -4,3 +4,4 @@ tags
 .projectile
 .#*
 .DS_Store
+*.class
