@@ -9,23 +9,24 @@
   root.app = {};
   app.init = function () {
     var ttv = fxml.get('ttv');
-
     $STAGE.scene.root.children.remove($STAGE.scene.root.children[0]);
-    var Ti = javafx.scene.control.TreeItem;
-    var r = new Ti('root node');
-    var c1 = new Ti('c1');
-    var c2 = new Ti('c2');
-    var c3 = new Ti('c3');
-    r.setExpanded(true);
-    r.children.setAll(c1,c2,c3);
-    ttv = new javafx.scene.control.TreeTableView(r);
-    var col1 = new javafx.scene.control.TreeTableColumn();
-    col1.cellValueFactory =
+    app.Ti = javafx.scene.control.TreeItem;
+    app.r = new app.Ti('root node');
+    app.c1 = new app.Ti('c1');
+    app.c2 = new app.Ti('c2');
+    app.c3 = new app.Ti('c3');
+    app.r.setExpanded(true);
+    app.r.children.setAll(app.c1,app.c2,app.c3);
+    app.ttv = new javafx.scene.control.TreeTableView(app.r);
+    app.col1 = new javafx.scene.control.TreeTableColumn();
+    app.col1.cellValueFactory =
       new javafx.util.Callback( { call: function () {
-        return new javafx.beans.property.ReadOnlyStringWrapper('poop');
+        return new javafx.beans.property.ReadOnlyStringWrapper('oh');
       }} );
-    ttv.columns.add(col1);
-    $STAGE.scene.root.children.add(ttv);
+    app.col1.cellFactory =
+      javafx.scene.control.cell.TextFieldTreeTableCell.forTreeTableColumn();
+    app.ttv.columns.add(app.col1);
+    $STAGE.scene.root.children.add(app.ttv);
   };
 
   root.appState = root.appState || {};
