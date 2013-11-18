@@ -16,14 +16,16 @@
   <!--   <TextField id="input" /> -->
   <!--   <Button id="addButton" text="add" /> -->
   <!-- </HBox> -->
-  <TreeTableView layoutX="20.0" fx:id="ttv" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml">
-    <columns>
+  <!-- <TreeTableView layoutX="20.0" fx:id="ttv" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml"> -->
+  <!--   <columns> -->
       <!-- <TreeTableColumn prefWidth="75.0" text="C1" /> -->
       <!-- <TreeTableColumn prefWidth="75.0" text="C2" /> -->
-    </columns>
-  </TreeTableView>
-
-    <Button text="+" id="add" />
+  <!--   </columns> -->
+  <!-- </TreeTableView> -->
+  <HBox id="h-span">
+    <Button text="add" id="add" />
+    <Button text="delete" id="delete" />
+  </HBox>
 
 
   <!-- <HBox id="h-spanb"> -->
