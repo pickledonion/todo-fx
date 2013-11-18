@@ -1,5 +1,5 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
-//simple test 12
+//simple test 16
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml */
 
 (function () {

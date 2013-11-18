@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet todo.css?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <Label id="titles" text="outliner" />
+  <!-- <HBox id="h-spana"> -->
+  <!--   <TextField id="input" /> -->
+  <!--   <Button id="addButton" text="add" /> -->
+  <!-- </HBox> -->
+  <TreeTableView layoutX="20.0" fx:id="ttv" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml">
+    <columns>
+      <!-- <TreeTableColumn prefWidth="75.0" text="C1" /> -->
+      <!-- <TreeTableColumn prefWidth="75.0" text="C2" /> -->
+    </columns>
+  </TreeTableView>
+
+    <Button text="+" id="add" />
+
+
+  <!-- <HBox id="h-spanb"> -->
+  <!--   <Button id="archive" text="archive" /> -->
+  <!--   <Label id="remaining" text="remaining" /> -->
+  <!-- </HBox> -->
+
+</VBox>
