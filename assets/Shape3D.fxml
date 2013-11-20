@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane id="AnchorPane" style="-fx-background-color: black;" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Button text="Salut"  />
+        <Sphere id="sphere" layoutX="130.0" layoutY="130.0" radius="100"/>
+        <!-- <Cylinder id="cylinder" layoutX="360.0" layoutY="200.0" height="200" radius="100"/> -->
+        <!-- <Box id="cylinder" layoutX="660.0" layoutY="270.0" width="200" height="200" depth="200" rotate="30"> -->
+        <!--     <rotationAxis> -->
+        <!--         <Point3D y="1.0" /> -->
+        <!--     </rotationAxis> -->
+        <!-- </Box> -->
+    </children>
+</AnchorPane>

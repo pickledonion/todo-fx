@@ -12,8 +12,8 @@
     state.data = state.data || app.data();
     state.tree = app.makeTree(state.data);
 
-    // app.ttv = fxml.get('ttv');
-    app.ttv = new javafx.scene.control.TreeTableView();
+    app.ttv = fxml.get('ttv');
+    // app.ttv = new javafx.scene.control.TreeTableView();
     app.ttv.id = 'ttv';
     app.ttv.root = state.tree;
 
@@ -51,11 +51,11 @@
       fxml.get('delete').onAction = app.deleteSelected;
     });
 
-    fxml.openWindow();
+    // fxml.openWindow();
 
-    var fxttv = fxml.get('ttv');
-    if (fxttv) {fxttv.parent.children.removeAll(fxttv);}
-    $STAGE.scene.root.children.add(app.ttv);
+    // var fxttv = fxml.get('ttv');
+    // if (fxttv) {fxttv.parent.children.removeAll(fxttv);}
+    // $STAGE.scene.root.children.add(app.ttv);
 
   };
 
@@ -73,10 +73,10 @@
       var parent = treeItem.parent;
       prn(evt.rowValue.value);
       print('treeItem: ' + treeItem)
-      app.init(root.appState);
-      // parent.setExpanded(false);
-      // parent.setExpanded(true);
+      parent.setExpanded(false);
+      parent.setExpanded(true);
     }
+    // app.init(root.appState);
   };
 
   app.data = function () {

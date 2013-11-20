@@ -1,0 +1,28 @@
+
+#h-span {
+    -fx-spacing:10;
+    -fx-alignment:center-left;
+}
+
+#titles {
+    -fx-font-size:32;
+}
+
+.list-view,
+.text-field,
+.h-box,
+.button {
+    -fx-font-size:20;
+    -fx-font-family: 'Futura';
+}
+
+.text {
+    -fx-font-size:20;
+    -fx-font-family: 'Futura';
+}
+
+.root {
+    -fx-background-color:#dddddd;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}

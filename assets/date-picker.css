@@ -1,0 +1,41 @@
+
+#h-span {
+    -fx-spacing:10;
+    -fx-alignment:center-left;
+    -fx-font-size:20;
+}
+
+#remaining {
+    -fx-font-size:16;
+}
+
+#titles {
+    -fx-font-size:32;
+}
+
+#input {
+    -fx-font-family: 'Futura';
+}
+
+/* .list-view, */
+/* .text-field, */
+/* .h-box, */
+/* .button { */
+/*     -fx-font-size:20; */
+/*     -fx-font-family: 'Futura'; */
+/* } */
+
+/* .text { */
+/*     -fx-font-family: 'Futura'; */
+/* } */
+
+.root {
+    -fx-font-family: 'Futura';
+}
+
+#bg {
+    -fx-font-size:20;
+    -fx-background-color:#dddddd;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+}
