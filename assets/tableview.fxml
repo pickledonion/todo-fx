@@ -11,21 +11,11 @@
 <?scenebuilder-stylesheet todo.css?>
 
 <VBox xmlns="http://javafx.com/javafx/8">
-  <Label id="titles" text="expense it!" />
-  <!-- <TableView layoutX="20.0" fx:id="table" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" > -->
-  <!--   <columns> -->
-  <!-- <TableColumn prefWidth="75.0" text="C1" /> -->
-  <!-- <TableColumn prefWidth="75.0" text="C2" /> -->
-  <!--   </columns> -->
-  <!-- </TableView> -->
+  <Label id="titles" text="team contact list" />
+  <TableView id="tableView"  />
   <HBox id="h-span">
-    <Button text="add" id="add" />
-    <Button text="delete" id="delete" />
+      <Button text="add" id="addButton" />
+    <Button text="delete" id="deleteButton" />
   </HBox>
-
-  <!-- <HBox id="h-spanb"> -->
-  <!--   <Button id="archive" text="archive" /> -->
-  <!--   <Label id="remaining" text="remaining" /> -->
-  <!-- </HBox> -->
 
 </VBox>

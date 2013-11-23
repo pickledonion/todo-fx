@@ -10,16 +10,15 @@
 <?import javafx.scene.text.*?>
 <?scenebuilder-stylesheet date-picker.css?>
 
-<VBox id="bg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"> <children>
-  <Label id="titles" text="hot dates" />
-  <DatePicker id="datePicker" />
-  <HBox id="h-span"><children>
-    <TextField id="input" />
-    <Button id="addButton" text="add" />
-  </children> </HBox>
+<VBox id="bg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <Label id="titles" text="hot date" />
+  <TextField id="input" />
+
+  <HBox id="h-span">
+    <DatePicker id="datePicker" />
+    <Button text="add" id="addButton" minWidth="70" />
+    <Button text="delete" id="deleteButton" minWidth="90" />
+  </HBox>
+
   <ListView id="dateList" />
-  <!-- <HBox id="h-span"> -->
-  <!--   <Button id="archive" text="archive" /> -->
-  <!--   <Label id="remaining" text="remaining" /> -->
-  <!-- </HBox> -->
-</children></VBox>
+</VBox>

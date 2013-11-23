@@ -54,7 +54,6 @@
     state.todos = state.todos || [];
     state.todoText = '';
     app.setHandler('addButton', 'addTodo');
-
     app.setHandler('archive', 'archive');
     state.listName = 'todoList';
     fxml.get(state.listName).setEditable(true);

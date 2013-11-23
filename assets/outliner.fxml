@@ -11,22 +11,10 @@
 <?scenebuilder-stylesheet todo.css?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
-    <Label id="titles" text="outliner" />
-  <TreeTableView layoutX="20.0" fx:id="ttv" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml">
-    <columns>
-      <!-- <TreeTableColumn prefWidth="75.0" text="C1" /> -->
-      <!-- <TreeTableColumn prefWidth="75.0" text="C2" /> -->
-    </columns>
-  </TreeTableView>
+  <Label id="titles" text="outliner" />
+  <TreeTableView id="ttv" />
   <HBox id="h-span">
-    <Button text="add" id="add" />
-    <Button text="delete" id="delete" />
+    <Button text="add" id="addButton" />
+    <Button text="delete" id="deleteButton" />
   </HBox>
-
-
-  <!-- <HBox id="h-spanb"> -->
-  <!--   <Button id="archive" text="archive" /> -->
-  <!--   <Label id="remaining" text="remaining" /> -->
-  <!-- </HBox> -->
-
 </VBox>
