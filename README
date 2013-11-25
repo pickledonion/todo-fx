@@ -1,9 +1,8 @@
-samples for nashorn javafx
+samples for nashorn javafx.
 
-made with bower components
-shows
-testing with jasmine-nashorn
-repl and live reloading of js fxml and css
+made using bower components and shows:
+testing with jasmine-nashorn.
+repl and live reloading of js, fxml and css.
 
 get the repo :
 git@github.com:pickledonion/todo-fx.git
@@ -12,6 +11,8 @@ cd todo-fx
 
 first install components with:
 bower install
+
+( bower is a javascript package manager http://bower.io/ )
 
 then run with any of:
 ./todo-fx.js

@@ -7,3 +7,4 @@ tags
 *.class
 maketags.sh
 .tern-project
+.gitignore
