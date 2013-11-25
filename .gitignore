@@ -5,3 +5,5 @@ tags
 .#*
 .DS_Store
 *.class
+maketags.sh
+.tern-project

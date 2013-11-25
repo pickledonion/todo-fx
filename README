@@ -1,7 +1,9 @@
-javafx todo app
+samples for nashorn javafx
+
 made with bower components
-repl
-live reloading of js fxml and css
+shows
+testing with jasmine-nashorn
+repl and live reloading of js fxml and css
 
 get the repo :
 git@github.com:pickledonion/todo-fx.git
@@ -17,3 +19,5 @@ then run with any of:
 ./outliner.js
 
 ./tableview.js
+
+./date-picker.js
