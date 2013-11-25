@@ -81,11 +81,13 @@
 
   app.deleteSelected = function (state, evt) {
     var item = app.selected(state);
-    var treeItem = app.findTreeItem(state.tree, item);
-    var parent = treeItem.parent.value;
-    if(item) {app.deleteItem(state.data, item)};
-    app.init(state);
-    app.revealTreeItem(app.findTreeItem(state.tree, parent), true);
+    if (item) {
+      var treeItem = app.findTreeItem(state.tree, item);
+      var parent = treeItem.parent.value;
+      app.deleteItem(state.data, item);
+      app.init(state);
+      app.revealTreeItem(app.findTreeItem(state.tree, parent), true);
+    }
   };
 
   app.treeItemList = function (treeItemAry) {
