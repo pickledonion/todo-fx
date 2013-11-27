@@ -8,3 +8,7 @@ tags
 maketags.sh
 .tern-project
 .gitignore
+/fxjs/build/
+/build/
+/nbproject/private/
+/dist/

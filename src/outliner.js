@@ -143,21 +143,22 @@
     else { return treeItem; }
   };
 
-
-  root.loading = load('bower_components/nashorn-repl/lib/loading.js');
-  var todofxml = 'assets/outliner.fxml';
-  var todocss = 'assets/outliner.css';
+  var project = '../';
+  var compFolder = 'bower_components/'
+  root.loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
+  var todofxml = project + 'assets/outliner.fxml';
+  var todocss = project + 'assets/outliner.css';
   var appList = [
     {path:$SCRIPTS[0], load:false} ,
     { path:todofxml, fxml:todofxml, css:todocss, cb:'loadAssets', load:true },
     { path:todocss, fxml:todofxml, css:todocss, cb:'loadAssets', load:false },
   ];
-  root.loadList = loading.getDefaultLoadList().concat(appList);
+  root.loadList = loading.getDefaultLoadList(project, compFolder).concat(appList);
   root.loadAssets = function (obj) {
     fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
-  loading.init(root.loadList);
+  loading.init(project, compFolder, root.loadList);
 
   root.replState = {later:true, filter:root.pretty.format};
 

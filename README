@@ -14,6 +14,10 @@ bower install
 
 ( bower is a javascript package manager http://bower.io/ )
 
+
+then move the the folder with the scripts in:
+cd src/
+
 then run with any of:
 ./todo-fx.js
 
@@ -22,3 +26,6 @@ then run with any of:
 ./tableview.js
 
 ./date-picker.js
+
+there is also a  netbeans project you can run the examples from too.
+you can choose different examples to run by selecting a different configuration.

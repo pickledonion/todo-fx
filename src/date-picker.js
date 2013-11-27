@@ -69,22 +69,22 @@
     state.list.selectionModel.clearSelection();
   };
 
-  var datefxml = 'assets/date-picker.fxml';
-  // var datecss = '';
-  var datecss = 'assets/date-picker.css';
-
-  root.loading = load('bower_components/nashorn-repl/lib/loading.js');
+  var project = '../';
+  var compFolder = 'bower_components/'
+  var datefxml = project + 'assets/date-picker.fxml';
+  var datecss = project + 'assets/date-picker.css';
+  root.loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
   var appList = [
     {path:$SCRIPTS[0], load:false} ,
     { path:datefxml, fxml:datefxml, css:datecss, cb:'loadAssets', load:true },
     { path:datecss, fxml:datefxml, css:datecss, cb:'loadAssets', load:false },
   ];
-  root.loadList = loading.getDefaultLoadList().concat(appList);
+  root.loadList = loading.getDefaultLoadList(project, compFolder).concat(appList);
   root.loadAssets = function (obj) {
     fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
-  loading.init(root.loadList);
+  loading.init(project, compFolder, root.loadList);
 
   root.replState = {later:true, filter:root.pretty.format};
 

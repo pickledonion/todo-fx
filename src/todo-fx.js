@@ -1,5 +1,5 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
-//simple test 16
+//simple test 17
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml */
 
 (function () {
@@ -7,7 +7,9 @@
   var root = this;
 
   root.app = {};
-
+//  $SCRIPTS = $SCRIPTS || [''];
+  print($STAGE);
+  
   app.addTodo = function (state) {
     state.todos.push({
       label: fxml.get('input').text,
@@ -83,20 +85,23 @@
 
   root.appState = root.appState || {};
 
-  root.loading = load('bower_components/nashorn-repl/lib/loading.js');
-  var todofxml = 'assets/todo.fxml';
-  var todocss = 'assets/todo.css';
+  var project = '../';
+  var components = 'bower_components/'
+  root.loading = load(project + components + 'nashorn-repl/lib/loading.js');
+  var todofxml = project + 'assets/todo.fxml';
+  var todocss =  project + 'assets/todo.css';
   var appList = [
     {path:$SCRIPTS[0], load:false},
     { path:todofxml, fxml:todofxml, css:todocss, cb:'loadAssets', load:true },
     { path:todocss, fxml:todofxml, css:todocss, cb:'loadAssets', load:false },
   ];
-  root.loadList = loading.getDefaultLoadList().concat(appList);
+  root.loadList = loading.getDefaultLoadList(project, components).concat(appList);
   root.loadAssets = function (obj) {
     fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
-  loading.init(root.loadList);
+
+  loading.init(project, components, root.loadList);
 
   root.replState = {later:true, filter:root.pretty.format};
 

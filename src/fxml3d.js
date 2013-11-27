@@ -13,20 +13,22 @@
 
   root.appState = root.appState || {};
 
-  root.loading = load('bower_components/nashorn-repl/lib/loading.js');
-  var appFxml = 'assets/Shape3D.fxml';
-  var appCss = '';
+  var project = '../';
+  var compFolder = 'bower_components/'
+  root.loading = load(project + compFolder +  'nashorn-repl/lib/loading.js');
+  var appFxml = project + 'assets/Shape3D.fxml';
+  var appCss = project + 'assets/todo.css';
   var appList = [
     {path:$SCRIPTS[0], load:false},
     { path:appFxml, fxml:appFxml, css:appCss, cb:'loadAssets', load:true },
     { path:appCss, fxml:appFxml, css:appCss, cb:'loadAssets', load:false },
   ];
-  root.loadList = loading.getDefaultLoadList().concat(appList);
+  root.loadList = loading.getDefaultLoadList(project, compFolder).concat(appList);
   root.loadAssets = function (obj) {
     fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
-  loading.init(root.loadList);
+  loading.init(project ,compFolder, root.loadList);
 
   root.replState = {later:true, filter:root.pretty.format};
 
