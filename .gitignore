@@ -12,3 +12,4 @@ maketags.sh
 /build/
 /nbproject/private/
 /dist/
+out/

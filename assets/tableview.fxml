@@ -8,14 +8,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
-<?scenebuilder-stylesheet todo.css?>
+<?scenebuilder-stylesheet tableview.css?>
 
 <VBox xmlns="http://javafx.com/javafx/8">
   <Label id="titles" text="team contact list" />
   <TableView id="tableView"  />
   <HBox id="h-span">
+    <children>
       <Button text="add" id="addButton" />
     <Button text="delete" id="deleteButton" />
+    </children>
   </HBox>
-
 </VBox>

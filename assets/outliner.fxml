@@ -14,7 +14,9 @@
   <Label id="titles" text="outliner" />
   <TreeTableView id="ttv" />
   <HBox id="h-span">
-    <Button text="add" id="addButton" />
+    <children>
+      <Button text="add" id="addButton" />
     <Button text="delete" id="deleteButton" />
+    </children>
   </HBox>
 </VBox>

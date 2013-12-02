@@ -8,17 +8,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.control.DatePicker?>
+
 <?scenebuilder-stylesheet date-picker.css?>
 
-<VBox id="bg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
-  <Label id="titles" text="hot date" />
-  <TextField id="input" />
-
-  <HBox id="h-span">
-    <DatePicker id="datePicker" />
-    <Button text="add" id="addButton" minWidth="70" />
-    <Button text="delete" id="deleteButton" minWidth="90" />
-  </HBox>
-
-  <ListView id="dateList" />
+<VBox id="bg" xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Label id="titles" text="hot date"/>
+    <TextField id="input"/>
+    <HBox id="h-span">
+      <children>
+        <DatePicker id="datePicker"/>
+        <Button text="add" id="addButton" minWidth="70"/>
+        <Button text="delete" id="deleteButton" minWidth="90"/>
+      </children>
+    </HBox>
+    <ListView id="dateList"/>
+  </children>
 </VBox>

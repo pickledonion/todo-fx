@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
 <?scenebuilder-stylesheet todo.css?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
-  <Label id="titles" text="todo" />
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <Label id="titles" text="todo" />
   <HBox id="h-span">
-    <TextField id="input" />
+    <children>
+      <TextField id="input" />
     <Button id="addButton" text="add" />
+    </children>
   </HBox>
   <ListView id="todoList" />
   <HBox id="h-span">
-    <Button id="archive" text="archive" />
+    <children>
+      <Button id="archive" text="archive" />
     <Label id="remaining" text="remaining" />
+    </children>
   </HBox>
+  </children>
 </VBox>

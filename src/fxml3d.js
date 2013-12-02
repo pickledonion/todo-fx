@@ -16,8 +16,8 @@
   var project = '../';
   var compFolder = 'bower_components/'
   root.loading = load(project + compFolder +  'nashorn-repl/lib/loading.js');
-  var appFxml = project + 'assets/Shape3D.fxml';
-  var appCss = project + 'assets/todo.css';
+  var appFxml = project + 'assets/fxml3d.fxml';
+  var appCss = project + 'assets/fxml3d.css';
   var appList = [
     {path:$SCRIPTS[0], load:false},
     { path:appFxml, fxml:appFxml, css:appCss, cb:'loadAssets', load:true },

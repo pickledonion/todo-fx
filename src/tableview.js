@@ -36,7 +36,7 @@
     app.setHandler('deleteButton', 'deleteSelected');
     app.render(state);
 
-    $STAGE.width = 490;
+//    $STAGE.width = 490;
 
   };
 
