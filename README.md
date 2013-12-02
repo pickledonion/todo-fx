@@ -50,7 +50,7 @@ and run with any of:
 There is also a netbeans project you can run the examples from too.
 Just run different examples by selecting a different project configuration.
 
-There is even an Intellij project but it might not be up-to-date.
+There is even an Intellij project but it might not be up to date.
 
 
 ##Repl
@@ -77,10 +77,20 @@ Edit and save the fxml and css and the design will update live without losing th
 
 ###outliner
 
+* shows the all new TreeTableView
+* inline editing of cells (somewhat buggy)
+* unfolding and folding of parents.
+* add and remove nodes even parents.
+
 ###date-picker
+
+* add dates to a list with the all new DatePicker
 
 ###tableview
 
+* inline editing of a table of contacts.
+
 ###fxm3d
 
+* show the new 3d shapes in fxml.
 * unfinished
