@@ -18,6 +18,18 @@ This project has a few short javascripts to show the use of javafx, fxml, and cs
 * watches and reloads fxml and css to enable live design from Scene Builder.
 * shows a pattern for structuring apps that preserves state in a running app as code and design are changed.
 
+## Requirements
+
+Nashorn, the java javascript engine, is part of Java 8. You can download and install [JDK 8 Early Access](https://jdk8.java.net/download.html) if you dont already have it.
+
+    $ java -version
+    java version "1.8.0-ea"
+    Java(TM) SE Runtime Environment (build 1.8.0-ea-b117)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.0-b59, mixed mode)
+
+    $ jjs -version
+    nashorn 1.8.0
+
 
 ## Installation
 
