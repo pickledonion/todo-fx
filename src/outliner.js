@@ -1,6 +1,6 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
 //simple tree table test 16
-/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn, watch, repl */
+/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn, watch, repl, app, loading */
 
 (function () {
   'use strict';

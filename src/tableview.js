@@ -1,6 +1,6 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
 //table view example 4
-/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn*/
+/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn, app, loading */
 
 (function () {
   'use strict';

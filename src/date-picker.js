@@ -1,6 +1,6 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
 //hot dates: date picker example 01
-/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn, watch, repl */
+/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, prn, watch, repl, app, loading */
 
 (function () {
   'use strict';
@@ -53,7 +53,6 @@
     if (idx === -1) {return;}
     state.dates.splice(idx, 1);
     app.render(state);
-    var newIdx = idx + 1;
     sel.clearSelection();
     // var newWrapIdx = idx % state.list.
     // sel.clearAndSelect();
@@ -70,14 +69,14 @@
   };
 
   var project = '../';
-  var compFolder = 'bower_components/'
+  var compFolder = 'bower_components/';
   var datefxml = project + 'assets/date-picker.fxml';
   var datecss = project + 'assets/date-picker.css';
-  root.loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
+  loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
   var appList = [
     {path:$SCRIPTS[0], load:false} ,
     { path:datefxml, fxml:datefxml, css:datecss, cb:'loadAssets', load:true },
-    { path:datecss, fxml:datefxml, css:datecss, cb:'loadAssets', load:false },
+    { path:datecss, fxml:datefxml, css:datecss, cb:'loadAssets', load:false }
   ];
   root.loadList = loading.getDefaultLoadList(project, compFolder).concat(appList);
   root.loadAssets = function (obj) {

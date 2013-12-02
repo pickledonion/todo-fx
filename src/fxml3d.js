@@ -1,6 +1,6 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
 //fxml3d example 4
-/*global _, util, app, trace, main, loading, $SCRIPTS, fxml */
+/*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
 
 (function () {
   'use strict';
@@ -21,7 +21,7 @@
   var appList = [
     {path:$SCRIPTS[0], load:false},
     { path:appFxml, fxml:appFxml, css:appCss, cb:'loadAssets', load:true },
-    { path:appCss, fxml:appFxml, css:appCss, cb:'loadAssets', load:false },
+    { path:appCss, fxml:appFxml, css:appCss, cb:'loadAssets', load:false }
   ];
   root.loadList = loading.getDefaultLoadList(project, compFolder).concat(appList);
   root.loadAssets = function (obj) {
