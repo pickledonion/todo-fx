@@ -1,5 +1,5 @@
 #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
-//simple test 17
+//simple test 18
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
 
 (function () {
@@ -7,7 +7,7 @@
   var root = this;
 
   root.app = {};
-//  $SCRIPTS = $SCRIPTS || [''];
+  //  $SCRIPTS = $SCRIPTS || [''];
   print($STAGE);
 
   app.addTodo = function (state) {
@@ -65,15 +65,15 @@
     state.listName = 'todoList';
     fxml.get(state.listName).setEditable(true);
     fxml.get(state.listName).cellFactory =
-        app.makeCell(util.get('done'),
-            util.get('label'));
+      app.makeCell(util.get('done'),
+                   util.get('label'));
     app.render(state);
   };
 
   app.render = function (state) {
     app.setItems(state.listName, state.todos);
     fxml.get('remaining').text = app.remaining(state) + ' of ' +
-        _.size(state.todos) + ' remaining';
+      _.size(state.todos) + ' remaining';
   };
 
   app.remaining = function (state) {

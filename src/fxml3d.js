@@ -1,4 +1,4 @@
-#! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
+ #! /usr/local/bin/rlwrap /usr/bin/jjs -fx -scripting
 //fxml3d example 4
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
 
@@ -14,7 +14,7 @@
   root.appState = root.appState || {};
 
   var project = '../';
-  var compFolder = 'bower_components/'
+  var compFolder = 'bower_components/';
   root.loading = load(project + compFolder +  'nashorn-repl/lib/loading.js');
   var appFxml = project + 'assets/fxml3d.fxml';
   var appCss = project + 'assets/fxml3d.css';

@@ -72,7 +72,7 @@
   var compFolder = 'bower_components/';
   var datefxml = project + 'assets/date-picker.fxml';
   var datecss = project + 'assets/date-picker.css';
-  loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
+  root.loading = load(project + compFolder + 'nashorn-repl/lib/loading.js');
   var appList = [
     {path:$SCRIPTS[0], load:false} ,
     { path:datefxml, fxml:datefxml, css:datecss, cb:'loadAssets', load:true },
