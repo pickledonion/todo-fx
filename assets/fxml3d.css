@@ -29,7 +29,20 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
+#bg {
+  -fx-background-color: radial-gradient(radius 100%, #ff00ff, #ff0064)
+}
+
+.label {
+  -fx-font-size: 18
+}
+#grid {
+  /*-fx-background-color:red;*/
+  -fx-hgap:10;
+  -fx-vgap:10;
+  -fx-padding:10
+}
 #h-span {
     -fx-spacing:10;
     -fx-alignment:center-left;

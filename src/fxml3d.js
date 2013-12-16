@@ -32,8 +32,10 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//fxml3d example 4
+//fxml3d example 10
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
+
+print('fxml3d!!!!!!');
 
 (function () {
   'use strict';
@@ -42,7 +44,62 @@
 
   app.init = function (state) {
     print('app.init');
+    state.t = state.t || 0;
+    state.running = true;
+    state.r = new javafx.scene.transform.Rotate(0, 0, 0);
+    state.r.axis = new javafx.geometry.Point3D(0, 1, 1);
+    var s1 = fxml.get('shape1');
+    s1.transforms.clear();
+    s1.transforms.add(state.r);
+    app.setColor(s1, '0xf0ff', '0xfff1');
+    var s2 = fxml.get('shape2');
+    app.setColor(s2, '0x0F0', '0xF00');
+    var s3 = fxml.get('shape3');
+    app.setColor(s3, '0xF00', '0xF00');
+    app.setHandler('animate-checkbox', 'running');
+    $STAGE.scene.camera = new javafx.scene.PerspectiveCamera(false);
+    var p = fxml.get('point');
+    p.layoutX = 400;
+    p.layoutY = 400;
+    p.translateZ = 1000;
+
+    p.scope.add(s1);
+
   };
+
+  app.running = function (state, evt) {
+    root.evt = evt;
+    state.running = !state.running;
+    app.render(state);
+  }
+
+  app.update = function (state) {
+    if (state.running) {
+      state.t = state.t + 1;
+      state.r.angle = state.t % 360;
+    }
+    app.render(state);
+  };
+
+  app.render = function (state) {
+    fxml.get('animate-checkbox').selected = state.running;
+  }
+
+  app.setHandler = function (node, fun, handlerName) {
+    if (_.isString(node)) { node = fxml.get(node); }
+    handlerName = handlerName || 'onAction';
+    node[handlerName] = function (e) { app[fun](root.appState, e); };
+  };
+
+  app.makeColor = function(col) {
+    return javafx.scene.paint.Color.web(col);
+  }
+  app.setColor = function (node, diffuseCol, specularCol) {
+    print('in .. setColor', diffuseCol, specularCol);
+    node.material  = new javafx.scene.paint.PhongMaterial();
+    node.material.diffuseColor = app.makeColor(diffuseCol);
+    node.material.specularColor = app.makeColor(specularCol);
+  }
 
   root.appState = root.appState || {};
 
@@ -67,7 +124,7 @@
 
   root.timer && root.timer.stop();
   root.timer = new javafx.animation.AnimationTimer(function () {
-    // app.update(root.appState);
+    app.update(root.appState);
     watch.update(root.watchState);
     repl.update(root.replState);
   });

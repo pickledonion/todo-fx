@@ -106,3 +106,5 @@ Edit and save the fxml and css and the design will update live without losing th
 
 * show the new 3d shapes in fxml.
 * unfinished
+
+$STAGE.scene.root.children[1]

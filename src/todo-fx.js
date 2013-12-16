@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//simple test 18
+//simple test 32
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
 
 (function () {
@@ -146,8 +146,8 @@
   root.timer && root.timer.stop();
   root.timer = new javafx.animation.AnimationTimer(function () {
     // app.update(root.appState);
-    watch.update(root.watchState);
     repl.update(root.replState);
+    watch.update(root.watchState);
   });
   root.timer.start();
 
