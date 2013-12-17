@@ -58,6 +58,7 @@ and run with any of:
     $ ./outliner.js
     $ ./tableview.js
     $ ./date-picker.js
+    $ ./fxml3d.js
 
 There is also a netbeans project you can run the examples from too.
 Just run different examples by selecting a different project configuration.
@@ -102,9 +103,8 @@ Edit and save the fxml and css and the design will update live without losing th
 
 * inline editing of a table of contacts.
 
-###fxm3d
+###fxml3d
 
-* show the new 3d shapes in fxml.
-* unfinished
+* shows the new 3d shapes loaded from fxml.
+* use sliders to control animation.
 
-$STAGE.scene.root.children[1]

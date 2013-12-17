@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59b1ccea-b2a1-417f-b0e4-0b8bfb3900c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fxml3d.css" afterPath="$PROJECT_DIR$/assets/fxml3d.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/fxml3d.fxml" afterPath="$PROJECT_DIR$/assets/fxml3d.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fxml3d.js" afterPath="$PROJECT_DIR$/src/fxml3d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="todo-fx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,12 +67,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fxml3d.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fxml3d.js">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="19" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.51931715" vertical-offset="0" max-vertical-offset="3077">
+            <state line="110" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.9218031" vertical-offset="1089" max-vertical-offset="2193">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -108,7 +108,6 @@
         <option value="$PROJECT_DIR$/assets/date-picker.css" />
         <option value="$PROJECT_DIR$/assets/outliner.css" />
         <option value="$PROJECT_DIR$/assets/tableview.css" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/assets/todo.css" />
         <option value="$PROJECT_DIR$/assets/todo.fxml" />
         <option value="$PROJECT_DIR$/bower_components/bower_components/nashorn-repl/lib/util.js" />
@@ -118,13 +117,14 @@
         <option value="$PROJECT_DIR$/assets/fxml3d.css" />
         <option value="$PROJECT_DIR$/assets/fxml3d.fxml" />
         <option value="$PROJECT_DIR$/src/fxml3d.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="736" />
+    <option name="x" value="-224" />
     <option name="y" value="-1178" />
-    <option name="width" value="960" />
+    <option name="width" value="959" />
     <option name="height" value="1178" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -411,12 +411,12 @@
       <workItem from="1386926097003" duration="1677000" />
       <workItem from="1387065515078" duration="5000" />
       <workItem from="1387196871619" duration="4874000" />
-      <workItem from="1387222891932" duration="14164000" />
+      <workItem from="1387222891932" duration="14342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35803000" />
+    <option name="totallyTimeSpent" value="35981000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -439,7 +439,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="736" y="-1178" width="960" height="1178" extended-state="0" />
+    <frame x="-224" y="-1178" width="959" height="1178" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -455,7 +455,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2154088" sideWeight="0.41764706" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24235807" sideWeight="0.5808824" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24262296" sideWeight="0.5808824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1990991" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -586,11 +586,6 @@
         <state line="2" column="92" selection-start="181" selection-end="181" vertical-scroll-proportion="0.10014728" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="3226" selection-end="3255" vertical-scroll-proportion="0.8844847" vertical-offset="1072" max-vertical-offset="1955" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/todo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="32" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.9423503" vertical-offset="629" max-vertical-offset="1224" />
@@ -669,6 +664,16 @@
         <state line="34" column="19" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.51931715" vertical-offset="0" max-vertical-offset="3077">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.9218031" vertical-offset="1089" max-vertical-offset="2193">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
