@@ -34,6 +34,14 @@
   -fx-background-color: radial-gradient(radius 100%, #ff00ff, #ff0064)
 }
 
+#title {
+  -fx-font-size: 100;
+  -fx-text-fill: radial-gradient(radius 100%, darkred, pink)
+}
+
+#3d {
+  -fx-background-color: blue
+}
 .label {
   -fx-font-size: 18
 }

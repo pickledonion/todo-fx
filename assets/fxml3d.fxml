@@ -38,32 +38,49 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane id="bg" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"><children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="bg"
+            xmlns="http://javafx.com/javafx/8">
+  <children>
 
-  <AmbientLight fx:id="ambient" lightOn="true" />
+    <AmbientLight fx:id="ambient" lightOn="true"/>
 
-  <PointLight fx:id="point" color="white" lightOn="true" />
+    <PointLight fx:id="point" color="white" lightOn="true"/>
 
-  <Cylinder fx:id="shape1" radius="100" height="200" layoutX="200.0" layoutY="200.0" />
 
-  <!--<Box fx:id="shape1" depth="200" height="200" layoutX="200.0" layoutY="200.0" width="200" />-->
+    <AnchorPane AnchorPane.leftAnchor="200" AnchorPane.topAnchor="200">
+      <children>
+        <Box fx:id="shape1" depth="200" height="200"
+             width="200"/>
 
-  <Box fx:id="shape2" depth="100" height="100" layoutX="200.0" layoutY="200.0" width="100" />
+        <Cylinder fx:id="shape2" radius="75" height="100"/>
 
-  <Box fx:id="shape3" depth="50" height="50" layoutX="200.0" layoutY="200.0" width="50" />
+        <Box fx:id="shape3" depth="50" height="50" width="50"/>
+      </children>
+    </AnchorPane>
 
-    <GridPane fx:id="grid" gridLinesVisible="false" layoutX="0" layoutY="0"><children>
+    <GridPane AnchorPane.bottomAnchor="10" id="grid" gridLinesVisible="false
+    ">
+      <children>
 
-        <Label prefWidth="100" text="color" />
-        <Slider prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label prefWidth="100" text="rate"/>
+        <Slider id="spin-slider" value="50" prefWidth="100" GridPane.columnIndex="1"
+                GridPane.rowIndex="0"/>
 
-        <Label text="spin" GridPane.rowIndex="1" />
-        <Slider GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="width" GridPane.rowIndex="1"/>
+        <Slider id="width-slider" value="50" GridPane.columnIndex="1"
+                GridPane.rowIndex="1"/>
 
-      <Label text="radius" GridPane.rowIndex="2" />
-      <Slider GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label text="radius" GridPane.rowIndex="2"/>
+        <Slider id="radius-slider" value="50" GridPane.columnIndex="1"
+                GridPane.rowIndex="2"/>
 
-      <Label text="animate" GridPane.rowIndex="3" />
-      <CheckBox id="animate-checkbox" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      </children></GridPane>
-</children></AnchorPane>
+        <Label text="animate" GridPane.rowIndex="3"/>
+        <CheckBox id="animate-checkbox" GridPane.columnIndex="1"
+                  GridPane.rowIndex="3"/>
+      </children>
+    </GridPane>
+
+    <Label AnchorPane.topAnchor="-40" AnchorPane.leftAnchor="10" fx:id="title"
+           text="spin"/>
+  </children>
+</AnchorPane>
