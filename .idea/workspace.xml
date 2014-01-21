@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59b1ccea-b2a1-417f-b0e4-0b8bfb3900c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fxml3d.js" afterPath="$PROJECT_DIR$/src/fxml3d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="todo-fx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,12 +71,9 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.9218031" vertical-offset="1089" max-vertical-offset="2193">
+            <state line="82" column="0" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.62646264" vertical-offset="919" max-vertical-offset="2193">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -153,6 +151,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,8 +263,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,10 +297,7 @@
       <setting name="workingDir" value="$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Local REPL Run" />
       <ConfigurationWrapper RunnerId="Local REPL Run" />
-      <method>
-        <option name="Synchronize Leiningen" enabled="true" />
-        <option name="Make" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local">
       <setting name="useLein" value="true" />
@@ -311,10 +306,7 @@
       <setting name="jvmArgs" value="" />
       <setting name="parameters" value="" />
       <setting name="workingDir" value="" />
-      <method>
-        <option name="Synchronize Leiningen" enabled="true" />
-        <option name="Make" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
@@ -411,12 +403,13 @@
       <workItem from="1386926097003" duration="1677000" />
       <workItem from="1387065515078" duration="5000" />
       <workItem from="1387196871619" duration="4874000" />
-      <workItem from="1387222891932" duration="14342000" />
+      <workItem from="1387222891932" duration="14411000" />
+      <workItem from="1387327924644" duration="131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35981000" />
+    <option name="totallyTimeSpent" value="36181000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -440,7 +433,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-224" y="-1178" width="959" height="1178" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -455,17 +448,17 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2154088" sideWeight="0.41764706" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24262296" sideWeight="0.5808824" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24808744" sideWeight="0.5808824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1990991" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -488,6 +481,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="46" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/fxml3d.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="31" selection-start="1984" selection-end="1984" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1241">
@@ -497,16 +497,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fxml3d.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="1" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1428">
-          <folding />
-        </state>
+        <state line="52" column="1" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fxml3d.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="21" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1428">
-          <folding />
-        </state>
+        <state line="52" column="21" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fxml3d.fxml">
@@ -598,51 +594,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/outliner.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="3129" selection-end="3356" vertical-scroll-proportion="0.3971249" vertical-offset="1020" max-vertical-offset="3842">
-          <folding />
-        </state>
+        <state line="82" column="0" selection-start="3129" selection-end="3356" vertical-scroll-proportion="0.3971249" vertical-offset="1020" max-vertical-offset="3842" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bower_components/nashorn-repl/lib/node-util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9690">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bower_components/nashorn-repl/lib/loading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="42" selection-start="6081" selection-end="6081" vertical-scroll-proportion="0.7744834" vertical-offset="1603" max-vertical-offset="2720">
-          <folding />
-        </state>
+        <state line="174" column="42" selection-start="6081" selection-end="6081" vertical-scroll-proportion="0.7744834" vertical-offset="1603" max-vertical-offset="2720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/todo-fx.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="29" selection-start="3367" selection-end="3367" vertical-scroll-proportion="0.7942498" vertical-offset="731" max-vertical-offset="2839">
-          <folding />
-        </state>
+        <state line="95" column="29" selection-start="3367" selection-end="3367" vertical-scroll-proportion="0.7942498" vertical-offset="731" max-vertical-offset="2839" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bower_components/nashorn-repl/lib/watch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="56" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.36657682" vertical-offset="0" max-vertical-offset="1113">
-          <folding />
-        </state>
+        <state line="54" column="56" selection-start="2326" selection-end="2326" vertical-scroll-proportion="0.36657682" vertical-offset="0" max-vertical-offset="1113" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bower_components/nashorn-repl/lib/fxml.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="57" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.015274034" vertical-offset="493" max-vertical-offset="2091">
-          <folding />
-        </state>
+        <state line="60" column="57" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.015274034" vertical-offset="493" max-vertical-offset="2091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fxml3d.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.557053" vertical-offset="94" max-vertical-offset="1564">
-          <folding />
-        </state>
+        <state line="42" column="28" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.557053" vertical-offset="94" max-vertical-offset="1564" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/todo.fxml">
@@ -661,14 +643,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fxml3d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.51931715" vertical-offset="0" max-vertical-offset="3077">
-          <folding />
-        </state>
+        <state line="34" column="19" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.51931715" vertical-offset="0" max-vertical-offset="3077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3278" selection-end="3278" vertical-scroll-proportion="0.9218031" vertical-offset="1089" max-vertical-offset="2193">
+        <state line="82" column="0" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.62646264" vertical-offset="919" max-vertical-offset="2193">
           <folding />
         </state>
       </provider>

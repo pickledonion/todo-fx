@@ -35,7 +35,6 @@
 //fxml3d example 16
 /*global _, util, app, trace, main, loading, $SCRIPTS, fxml, app, loading */
 
-
 (function () {
   'use strict';
   var root = this;
@@ -116,7 +115,7 @@
 
   app.render = function (state) {
     fxml.get('animate-checkbox').selected = state.running;
-  }
+  };
 
   app.setHandler = function (node, fun, handlerName) {
     if (_.isString(node)) {

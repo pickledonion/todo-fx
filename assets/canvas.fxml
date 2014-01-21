@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2013, Oracle and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="bg"
+            xmlns="http://javafx.com/javafx/8">
+  <children>
+
+    <AmbientLight fx:id="ambient" lightOn="true"/>
+
+    <PointLight fx:id="point" color="white" lightOn="true"/>
+
+
+    <AnchorPane AnchorPane.leftAnchor="200" AnchorPane.topAnchor="200">
+      <children>
+        <Box fx:id="shape1" depth="200" height="200"
+             width="200"/>
+
+        <Cylinder fx:id="shape2" radius="75" height="100"/>
+
+        <Box fx:id="shape3" depth="50" height="50" width="50"/>
+      </children>
+    </AnchorPane>
+
+    <GridPane AnchorPane.bottomAnchor="10" id="grid" gridLinesVisible="false
+    ">
+      <children>
+
+        <Label prefWidth="100" text="rate"/>
+        <Slider id="spin-slider" value="50" prefWidth="100" GridPane.columnIndex="1"
+                GridPane.rowIndex="0"/>
+
+        <Label text="width" GridPane.rowIndex="1"/>
+        <Slider id="width-slider" value="50" GridPane.columnIndex="1"
+                GridPane.rowIndex="1"/>
+
+        <Label text="radius" GridPane.rowIndex="2"/>
+        <Slider id="radius-slider" value="50" GridPane.columnIndex="1"
+                GridPane.rowIndex="2"/>
+
+        <Label text="animate" GridPane.rowIndex="3"/>
+        <CheckBox id="animate-checkbox" GridPane.columnIndex="1"
+                  GridPane.rowIndex="3"/>
+      </children>
+    </GridPane>
+
+    <Label AnchorPane.topAnchor="-40" AnchorPane.leftAnchor="10" fx:id="title"
+           text="spin"/>
+  </children>
+</AnchorPane>
