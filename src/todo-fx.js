@@ -135,7 +135,6 @@
   ];
   root.loadList = loading.getDefaultLoadList(project, components).concat(appList);
   root.loadAssets = function (obj) {
-    print('TODO-FX LOADASSETS');
     fxml.setScene(obj.fxml, obj.css);
     app.init(root.appState);
   };
