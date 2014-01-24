@@ -45,7 +45,8 @@
 <?scenebuilder-stylesheet date-picker.css?>
 
 <VBox id="bg" xmlns:fx="http://javafx.com/fxml/1"
-      xmlns="http://javafx.com/javafx/2.2">
+      xmlns="http://javafx.com/javafx/2.2"
+      prefWidth="400" prefHeight="400" >
   <children>
     <Label id="titles" text="hot date"/>
     <TextField id="input"/>

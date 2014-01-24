@@ -39,7 +39,8 @@
 <?import javafx.scene.shape.*?>
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="bg"
-            xmlns="http://javafx.com/javafx/8">
+            xmlns="http://javafx.com/javafx/8"
+             prefWidth="400" prefHeight="400" >
   <children>
 
     <AmbientLight fx:id="ambient" lightOn="true"/>

@@ -43,8 +43,9 @@
 <?import javafx.scene.text.*?>
 <?scenebuilder-stylesheet todo.css?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
-  <Label id="titles" text="outliner" />
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+ prefWidth="400" prefHeight="400">
+  <Label id="titles" text="outliner"  />
   <TreeTableView id="ttv" />
   <HBox id="h-span">
     <children>

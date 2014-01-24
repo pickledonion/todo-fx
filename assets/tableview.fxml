@@ -42,7 +42,8 @@
 <?import javafx.scene.text.*?>
 <?scenebuilder-stylesheet tableview.css?>
 
-<VBox xmlns="http://javafx.com/javafx/8">
+<VBox xmlns="http://javafx.com/javafx/8"
+ prefWidth="400" prefHeight="400">
   <Label id="titles" text="team contact list" />
   <TableView id="tableView"  />
   <HBox id="h-span">
